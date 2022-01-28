@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:WalletRadio-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,24 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:CTRIM C1
-U 1 1 5EF66DCD
-P 2850 3150
-F 0 "C1" H 2965 3196 50  0000 L CNN
-F 1 "45-280pF" H 2965 3105 50  0000 L CNN
-F 2 "WalletRadio:464-PC_Trimmer" H 2850 3150 50  0001 C CNN
-F 3 "https://www.rfparts.com/464-pc.html" H 2850 3150 50  0001 C CNN
-	1    2850 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L L1
 U 1 1 5EF68F6A
 P 3550 3150
 F 0 "L1" H 3602 3196 50  0000 L CNN
-F 1 "320uH" H 3602 3105 50  0000 L CNN
+F 1 "160uH" H 3602 3105 50  0000 L CNN
 F 2 "WalletRadio:7447714331_330uH" H 3550 3150 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/w%C3%BCrth-elektronik/7447714331/732-4111-6-ND/3476554" H 3550 3150 50  0001 C CNN
+F 3 "" H 3550 3150 50  0001 C CNN
 	1    3550 3150
 	1    0    0    -1  
 $EndComp
@@ -42,17 +30,15 @@ Wire Wire Line
 	2750 1900 2400 1900
 Wire Wire Line
 	2400 1900 2400 2050
-Wire Wire Line
-	4200 3400 4200 3500
 $Comp
 L power:GND #PWR03
 U 1 1 5EF6A910
-P 4200 3500
-F 0 "#PWR03" H 4200 3250 50  0001 C CNN
-F 1 "GND" H 4205 3327 50  0000 C CNN
-F 2 "" H 4200 3500 50  0001 C CNN
-F 3 "" H 4200 3500 50  0001 C CNN
-	1    4200 3500
+P 4200 3650
+F 0 "#PWR03" H 4200 3400 50  0001 C CNN
+F 1 "GND" H 4205 3477 50  0000 C CNN
+F 2 "" H 4200 3650 50  0001 C CNN
+F 3 "" H 4200 3650 50  0001 C CNN
+	1    4200 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -71,12 +57,6 @@ Wire Wire Line
 Connection ~ 3550 2900
 Wire Wire Line
 	3550 3000 3550 2900
-Wire Wire Line
-	3550 3300 3550 3400
-Wire Wire Line
-	2850 3300 2850 3400
-Wire Wire Line
-	2850 3000 2850 2900
 $Comp
 L Device:C_Small C3
 U 1 1 5EF6C4CC
@@ -99,12 +79,6 @@ F 3 "~" H 5950 3250 50  0001 C CNN
 	1    5950 3250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4200 3250 4200 3400
-Wire Wire Line
-	4200 3400 3550 3400
-Connection ~ 3550 3400
-Connection ~ 4200 3400
 Wire Wire Line
 	4200 3050 4200 2900
 Wire Wire Line
@@ -142,8 +116,6 @@ F 3 "~" H 5700 2600 50  0001 C CNN
 	1    5700 2600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2850 3400 3550 3400
 $Comp
 L Device:R_Small R4
 U 1 1 5EF764DD
@@ -310,12 +282,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR02
 U 1 1 5EFB12B0
-P 2450 5250
-F 0 "#PWR02" H 2450 5000 50  0001 C CNN
-F 1 "GND" H 2455 5077 50  0000 C CNN
-F 2 "" H 2450 5250 50  0001 C CNN
-F 3 "" H 2450 5250 50  0001 C CNN
-	1    2450 5250
+P 2450 5400
+F 0 "#PWR02" H 2450 5150 50  0001 C CNN
+F 1 "GND" H 2455 5227 50  0000 C CNN
+F 2 "" H 2450 5400 50  0001 C CNN
+F 3 "" H 2450 5400 50  0001 C CNN
+	1    2450 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -323,34 +295,14 @@ Wire Wire Line
 $Comp
 L Switch:SW_DIP_x01 SW1001
 U 1 1 5EF7C51E
-P 3500 4700
-F 0 "SW1001" H 3500 4433 50  0000 C CNN
-F 1 "SW_DIP_x01" H 3500 4524 50  0000 C CNN
-F 2 "WalletRadio:CUS-12TB_Switch" H 3500 4700 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/nidec-copal-electronics/CUS-12TB/563-1102-1-ND/1124231" H 3500 4700 50  0001 C CNN
-	1    3500 4700
+P 3500 4900
+F 0 "SW1001" H 3500 4633 50  0000 C CNN
+F 1 "SW_DIP_x01" H 3500 4724 50  0000 C CNN
+F 2 "WalletRadio:CUS-12TB_Switch" H 3500 4900 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nidec-copal-electronics/CUS-12TB/563-1102-1-ND/1124231" H 3500 4900 50  0001 C CNN
+	1    3500 4900
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q1001
-U 1 1 5EF886B8
-P 3800 4350
-F 0 "Q1001" V 4143 4350 50  0000 C CNN
-F 1 "Q_NMOS_DGS" V 4052 4350 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 4450 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMG3402L.pdf" H 3800 4350 50  0001 C CNN
-	1    3800 4350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3800 4550 3800 4700
-Wire Wire Line
-	3200 4700 3200 4250
-Wire Wire Line
-	2450 4250 3200 4250
-Wire Wire Line
-	3600 4250 3200 4250
-Connection ~ 3200 4250
 $Comp
 L Device:Q_NPN_ECB Q1002
 U 1 1 5EFB3D6E
@@ -604,7 +556,102 @@ F 3 "~" H 2750 1700 50  0001 C CNN
 	1    2750 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 2850 2900
 Wire Wire Line
 	2850 1900 2850 2900
+$Comp
+L Device:D_Capacitance D?
+U 1 1 61F37861
+P 2850 3400
+F 0 "D?" V 2804 3480 50  0000 L CNN
+F 1 "D_Capacitance" V 2895 3480 50  0000 L CNN
+F 2 "" H 2850 3400 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/BB201.pdf" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61F3CBB0
+P 2400 3200
+F 0 "RV?" H 2331 3246 50  0000 R CNN
+F 1 "R_POT" H 2331 3155 50  0000 R CNN
+F 2 "" H 2400 3200 50  0001 C CNN
+F 3 "~" H 2400 3200 50  0001 C CNN
+	1    2400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3250 4200 3550
+$Comp
+L Device:C_Small C?
+U 1 1 61F47165
+P 2850 3000
+F 0 "C?" H 2942 3046 50  0000 L CNN
+F 1 "10n" H 2942 2955 50  0000 L CNN
+F 2 "" H 2850 3000 50  0001 C CNN
+F 3 "~" H 2850 3000 50  0001 C CNN
+	1    2850 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 2900
+Wire Wire Line
+	2850 3100 2850 3200
+Wire Wire Line
+	2850 3550 3550 3550
+Connection ~ 4200 3550
+Wire Wire Line
+	4200 3550 4200 3650
+Wire Wire Line
+	3550 3300 3550 3550
+Connection ~ 3550 3550
+Wire Wire Line
+	3550 3550 4200 3550
+Wire Wire Line
+	2550 3200 2850 3200
+Connection ~ 2850 3200
+Wire Wire Line
+	2850 3200 2850 3250
+Wire Wire Line
+	2400 3350 2400 3550
+Wire Wire Line
+	2400 3550 2850 3550
+Connection ~ 2850 3550
+Text Label 2000 2900 0    50   ~ 0
++Vbat
+Wire Wire Line
+	2400 2900 2400 3050
+Wire Wire Line
+	2000 2900 2400 2900
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 61F5BA5E
+P 3800 4150
+F 0 "Q?" V 4049 4150 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 4140 4150 50  0000 C CNN
+F 2 "" H 4000 4250 50  0001 C CNN
+F 3 "~" H 3800 4150 50  0001 C CNN
+	1    3800 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 4250 3600 4250
+Wire Wire Line
+	4050 3950 3800 3950
+Wire Wire Line
+	4050 3950 4050 4900
+Wire Wire Line
+	4050 4900 3800 4900
+Wire Wire Line
+	2450 5250 2450 5300
+Wire Wire Line
+	2450 5300 3200 5300
+Wire Wire Line
+	3200 5300 3200 4900
+Connection ~ 2450 5300
+Wire Wire Line
+	2450 5300 2450 5400
+Text Notes 7050 3350 0    50   ~ 0
+Thumbwheel pot
+Text Notes 1700 3400 0    50   ~ 0
+Thumbwheel pot
 $EndSCHEMATC
