@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name WalletRadioLib)(type Legacy)(uri ${KIPRJMOD}/WalletRadioLib.lib)(options "")(descr ""))
+  (lib (name 3352T-1-103LF)(type Legacy)(uri ${KIPRJMOD}/3352T-1-103LF/3352T-1-103LF.lib)(options "")(descr ""))
+)
